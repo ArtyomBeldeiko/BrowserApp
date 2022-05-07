@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,81 +14,13 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQf-cd-4wO">
-                                <rect key="frame" x="0.0" y="89" width="414" height="807"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwQ-zB-yiI">
-                                <rect key="frame" x="353" y="47" width="56" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="SmB-ZH-Q1P"/>
-                                    <constraint firstAttribute="width" constant="56" id="gJ4-r1-WU4"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="">
-                                    <imageReference key="image" image="arrowshape.turn.up.right.circle" catalog="system" symbolScale="large" renderingMode="template"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="forwardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="461-gr-7xK"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNc-57-R2S">
-                                <rect key="frame" x="70" y="47" width="276" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="yhP-If-Lyb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrT-Oc-K5I">
-                                <rect key="frame" x="6" y="47" width="56" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="kIf-Hz-sgP"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Back" cornerStyle="fixed">
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="backButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HvE-NJ-jwJ"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="tNc-57-R2S" firstAttribute="baseline" secondItem="CwQ-zB-yiI" secondAttribute="baseline" id="3Cx-Ug-HiP"/>
-                            <constraint firstItem="CwQ-zB-yiI" firstAttribute="leading" secondItem="tNc-57-R2S" secondAttribute="trailing" constant="7" id="66M-xO-gVg"/>
-                            <constraint firstItem="DrT-Oc-K5I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="7v7-r3-sKn"/>
-                            <constraint firstItem="tQf-cd-4wO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AiW-zc-Od8"/>
-                            <constraint firstItem="tQf-cd-4wO" firstAttribute="top" secondItem="tNc-57-R2S" secondAttribute="bottom" constant="8" id="FuS-UH-THt"/>
-                            <constraint firstItem="CwQ-zB-yiI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="H9h-0X-Kl9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CwQ-zB-yiI" secondAttribute="trailing" constant="5" id="JWg-NN-ne3"/>
-                            <constraint firstItem="tNc-57-R2S" firstAttribute="leading" secondItem="DrT-Oc-K5I" secondAttribute="trailing" constant="8" symbolic="YES" id="RJR-9b-T5b"/>
-                            <constraint firstAttribute="bottom" secondItem="tQf-cd-4wO" secondAttribute="bottom" id="Yy3-Zc-qVc"/>
-                            <constraint firstItem="CwQ-zB-yiI" firstAttribute="width" secondItem="DrT-Oc-K5I" secondAttribute="width" id="gur-yn-oXD"/>
-                            <constraint firstItem="tQf-cd-4wO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uqF-bL-0Pd"/>
-                            <constraint firstItem="DrT-Oc-K5I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="yzt-A6-OJt"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="URLtextField" destination="tNc-57-R2S" id="zCY-EY-UdT"/>
-                        <outlet property="backButton" destination="DrT-Oc-K5I" id="X6k-Zm-BNy"/>
-                        <outlet property="forwardButton" destination="CwQ-zB-yiI" id="rlr-92-ztA"/>
-                        <outlet property="webView" destination="tQf-cd-4wO" id="Glx-t6-0w7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="arrowshape.turn.up.right.circle" catalog="system" width="128" height="121"/>
-    </resources>
 </document>
